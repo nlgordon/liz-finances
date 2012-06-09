@@ -63,6 +63,7 @@ grails.hibernate.cache.queries = true
 environments {
     development {
         grails.logging.jul.usebridge = true
+		grails.plugin.cloudfoundry.target = "api.nlgordon.cloudfoundry.me"
     }
     production {
         grails.logging.jul.usebridge = false
