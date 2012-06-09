@@ -27,7 +27,7 @@
 				<li class="fieldcontain">
 					<span id="amount-label" class="property-label"><g:message code="accountEntry.amount.label" default="Amount" /></span>
 					
-						<span class="property-value" aria-labelledby="amount-label"><g:fieldValue bean="${accountEntryInstance}" field="amount"/></span>
+						<span class="property-value" aria-labelledby="amount-label"><g:formatNumber type="currency" number="${accountEntryInstance?.amount}"/></span>
 					
 				</li>
 				</g:if>
@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="entered-label" class="property-label"><g:message code="accountEntry.entered.label" default="Entered" /></span>
 					
-						<span class="property-value" aria-labelledby="entered-label"><g:formatDate date="${accountEntryInstance?.entered}" /></span>
+						<span class="property-value" aria-labelledby="entered-label"><g:formatDate type="date" date="${accountEntryInstance?.entered}" /></span>
 					
 				</li>
 				</g:if>
