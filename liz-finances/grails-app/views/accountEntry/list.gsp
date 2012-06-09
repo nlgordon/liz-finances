@@ -24,11 +24,14 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="amount" title="${message(code: 'accountEntry.amount.label', default: 'Amount')}" />
-					
-						<g:sortableColumn property="description" title="${message(code: 'accountEntry.description.label', default: 'Description')}" />
-					
-						<g:sortableColumn property="entered" title="${message(code: 'accountEntry.entered.label', default: 'Entered')}" />
+						<th>Description</th>
+						<th>Amount</th>
+						<th>Entered</th>
+<%--						<g:sortableColumn property="description" title="${message(code: 'accountEntry.description.label', default: 'Description')}" />--%>
+<%--						--%>
+<%--						<g:sortableColumn property="amount" title="${message(code: 'accountEntry.amount.label', default: 'Amount')}" />--%>
+<%--					--%>
+<%--						<g:sortableColumn property="entered" title="${message(code: 'accountEntry.entered.label', default: 'Entered')}" />--%>
 					
 						<th>Actions</th>
 					</tr>
