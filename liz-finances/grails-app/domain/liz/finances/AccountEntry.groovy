@@ -8,4 +8,5 @@ class AccountEntry {
 	Date entered;
 	BigDecimal amount;
 	String description;
+	Project project;
 }

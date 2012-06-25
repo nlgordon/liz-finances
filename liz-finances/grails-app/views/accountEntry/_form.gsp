@@ -26,3 +26,10 @@
 	<g:datePicker name="entered" precision="day"  value="${accountEntryInstance?.entered}" required="" />
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: accountEntryInstance, field: 'project', 'error')} required">
+	<label for="project">
+		<g:message code="accountEntry.project.label" default="Project" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="project" name="project.name" from="${liz.finances.Project.list()}" optionKey="id" required="" value="${accountEntryInstance?.project?.id}" class="many-to-one"/>
+</div>

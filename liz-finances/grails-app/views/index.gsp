@@ -75,6 +75,37 @@
 		</style>
 	</head>
 	<body>
+		<g:link action="create" controller="timeEntry" class="create">Add New</g:link>
+		<table>
+			<thead>
+				<tr>
+					<g:sortableColumn property="when" title="${message(code: 'timeEntry.when.label', default: 'When')}" />
+				
+					<g:sortableColumn property="amount" title="${message(code: 'timeEntry.amount.label', default: 'Amount')}" />
+				
+<%--					<g:sortableColumn property="notes" title="${message(code: 'timeEntry.notes.label', default: 'Notes')}" />--%>
+				
+					<th><g:message code="timeEntry.project.label" default="Project" /></th>
+				
+				
+				</tr>
+			</thead>
+			<tbody>
+			<g:each in="${timeEntryInstanceList}" status="i" var="timeEntryInstance">
+				<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					<td><g:link action="edit" controller="timeEntry" id="${timeEntryInstance.id}"><g:formatDate date="${timeEntryInstance.when}" /></g:link></td>
+					
+					<td>${fieldValue(bean: timeEntryInstance, field: "amount")}</td>
+				
+<%--					<td>${fieldValue(bean: timeEntryInstance, field: "notes")}</td>--%>
+				
+					<td>${fieldValue(bean: timeEntryInstance, field: "project")}</td>
+				
+				
+				</tr>
+			</g:each>
+			</tbody>
+		</table>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
