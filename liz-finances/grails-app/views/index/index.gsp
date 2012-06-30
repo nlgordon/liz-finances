@@ -7,35 +7,19 @@
 		</style>
 	</head>
 	<body>
-		<g:link action="create" controller="project" class="create">Add New Project</g:link>
-		<g:link action="list" controller="project">Show All Projects</g:link>
 		<h3>Active Projects</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Started</th>
-					<th>Due</th>
-					<th>Completed</th>
-					<th>Contract Number</th>
-				</tr>
-			</thead>
-			<tbody>
-			<g:each in="${projectList}" status="i" var="project">
-				<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					<td><g:link action="show" controller="project" id="${project.id}">${project.name}</g:link></td>
-					<td><g:formatDate format="d MMM yyyy" date="${project.start}" />
-					<td><g:formatDate format="d MMM yyyy" date="${project.due }"/>
-					<td><g:formatDate format="d MMM yyyy" date="${project.completed }"/>
-					<td>${project.contractNumber }</td>
-					
-				</tr>
-			</g:each>
-			</tbody>
-		</table>
+		<g:link action="create" controller="project" class="create">Add New</g:link>
+		<g:link action="list" controller="project">Show All</g:link>
+		<g:render template="/project/includeList"/>
 		
 		<h3>Recent Time Entries</h3>
-		<g:link action="create" controller="timeEntry" class="create">Add New Time Entry</g:link>
+		<g:link action="create" controller="timeEntry" class="create">Add New</g:link>
+		<g:link action="list" controller="timeEntry">Show All</g:link>
 		<g:render template="/timeEntry/includeList"/>
+		
+		<h3>Recent Account Entries</h3>
+		<g:link action="create" controller="accountEntry" class="create">Add New</g:link>
+		<g:link action="list" controller="accountEntry">Show All</g:link>
+		<g:render template="/accountEntry/includeList"/>
 	</body>
 </html>

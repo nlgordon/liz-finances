@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: timeEntryInstance, field: 'amount', 'error')} required">
-	<label for="amount">
-		<g:message code="timeEntry.amount.label" default="Amount" />
+<div class="fieldcontain ${hasErrors(bean: timeEntryInstance, field: 'hours', 'error')} required">
+	<label for="hours">
+		<g:message code="timeEntry.hours.label" default="Hours" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="number" max="24" step=".1" name="amount" required="" value="${fieldValue(bean: timeEntryInstance, field: 'amount')}"/>
+	<g:field type="number" max="24" step=".1" name="hours" required="" value="${fieldValue(bean: timeEntryInstance, field: 'hours')}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: timeEntryInstance, field: 'notes', 'error')} ">
@@ -23,7 +23,7 @@
 		<g:message code="timeEntry.project.label" default="Project" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="project" name="project.id" optionValue="name" optionKey="id" from="${liz.finances.Project.list()}" optionKey="id" required="" value="${timeEntryInstance?.project?.id}" class="many-to-one"/>
+	<g:select id="project" name="project.id" optionValue="name" optionKey="id" from="${liz.finances.Project.list()}" required="" value="${timeEntryInstance?.project?.id}" class="many-to-one"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: timeEntryInstance, field: 'when', 'error')} required">

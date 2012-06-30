@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list timeEntry">
 			
-				<g:if test="${timeEntryInstance?.amount}">
+				<g:if test="${timeEntryInstance?.hours}">
 				<li class="fieldcontain">
-					<span id="amount-label" class="property-label"><g:message code="timeEntry.amount.label" default="Amount" /></span>
+					<span id="hours-label" class="property-label"><g:message code="timeEntry.hours.label" default="Hours" /></span>
 					
-						<span class="property-value" aria-labelledby="amount-label"><g:fieldValue bean="${timeEntryInstance}" field="amount"/></span>
+						<span class="property-value" aria-labelledby="hours-label"><g:fieldValue bean="${timeEntryInstance}" field="hours"/> hours</span>
 					
 				</li>
 				</g:if>
@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="project-label" class="property-label"><g:message code="timeEntry.project.label" default="Project" /></span>
 					
-						<span class="property-value" aria-labelledby="project-label"><g:link controller="project" action="show" id="${timeEntryInstance?.project?.id}">${timeEntryInstance?.project?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="project-label"><g:link controller="project" action="show" id="${timeEntryInstance?.project?.id}">${timeEntryInstance?.project?.name.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -54,7 +54,7 @@
 				<li class="fieldcontain">
 					<span id="when-label" class="property-label"><g:message code="timeEntry.when.label" default="When" /></span>
 					
-						<span class="property-value" aria-labelledby="when-label"><g:formatDate date="${timeEntryInstance?.when}" /></span>
+						<span class="property-value" aria-labelledby="when-label"><g:formatDate date="${timeEntryInstance?.when}" format="dd/MMM/yyyy" /></span>
 					
 				</li>
 				</g:if>

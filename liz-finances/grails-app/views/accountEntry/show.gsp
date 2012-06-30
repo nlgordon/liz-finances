@@ -41,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${accountEntryInstance?.entered}">
+				<g:if test="${accountEntryInstance?.when}">
 				<li class="fieldcontain">
-					<span id="entered-label" class="property-label"><g:message code="accountEntry.entered.label" default="Entered" /></span>
+					<span id="when-label" class="property-label"><g:message code="accountEntry.when.label" default="When" /></span>
 					
-						<span class="property-value" aria-labelledby="entered-label"><g:formatDate type="date" date="${accountEntryInstance?.entered}" /></span>
+						<span class="property-value" aria-labelledby="when-label"><g:formatDate type="date" date="${accountEntryInstance?.when}" /></span>
 					
 				</li>
 				</g:if>

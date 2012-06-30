@@ -55,7 +55,9 @@
 				<li class="fieldcontain">
 					<span id="paymentAmount-label" class="property-label"><g:message code="project.paymentAmount.label" default="Payment Amount" /></span>
 					
-						<span class="property-value" aria-labelledby="paymentAmount-label"><g:fieldValue bean="${projectInstance}" field="paymentAmount"/></span>
+						<span class="property-value" aria-labelledby="paymentAmount-label">
+							<g:formatNumber number="${projectInstance?.paymentAmount}" type="currency" currencyCode="USD"/>
+						</span>
 					
 				</li>
 				</g:if>
@@ -106,18 +108,13 @@
 			</g:form>
 			
 			<h2>Time Entries</h2>
+			<g:link class="create" action="create" controller="timeEntry" params="['project.id': projectInstance.id]">Create New</g:link>
 			<g:render template="/timeEntry/includeList" model="${[timeEntryList: projectInstance.timeEntry] }"/>
+			
+			<h3>Account Entries</h3>
+			<g:link action="create" controller="accountEntry" class="create" params="['project.id': projectInstance.id]">Create New</g:link>
+			<g:render template="/accountEntry/includeList" model="${[accountEntryList: projectInstance.accountEntry] }"/>
 				
-				<g:if test="${projectInstance?.accountEntry}">
-				<li class="fieldcontain">
-					<span id="accountEntry-label" class="property-label"><g:message code="project.accountEntry.label" default="Account Entry" /></span>
-					
-						<g:each in="${projectInstance.accountEntry}" var="a">
-						<span class="property-value" aria-labelledby="accountEntry-label"><g:link controller="accountEntry" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
 			
 		</div>
 	</body>

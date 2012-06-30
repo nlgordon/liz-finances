@@ -12,7 +12,7 @@ class AccountEntryController {
 
     def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-		params.sort = "entered";
+		params.sort = "when";
 		params.order = "desc";
         [accountEntryInstanceList: AccountEntry.list(params), accountEntryInstanceTotal: AccountEntry.count()]
     }

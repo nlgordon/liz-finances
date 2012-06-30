@@ -24,7 +24,7 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="amount" title="${message(code: 'timeEntry.amount.label', default: 'Amount')}" />
+						<g:sortableColumn property="hours" title="${message(code: 'timeEntry.hours.label', default: 'Hours')}" />
 					
 						<g:sortableColumn property="notes" title="${message(code: 'timeEntry.notes.label', default: 'Notes')}" />
 					
@@ -38,7 +38,7 @@
 				<g:each in="${timeEntryInstanceList}" status="i" var="timeEntryInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${timeEntryInstance.id}">${fieldValue(bean: timeEntryInstance, field: "amount")}</g:link></td>
+						<td><g:link action="show" id="${timeEntryInstance.id}">${fieldValue(bean: timeEntryInstance, field: "hours")}</g:link></td>
 					
 						<td>${fieldValue(bean: timeEntryInstance, field: "notes")}</td>
 					

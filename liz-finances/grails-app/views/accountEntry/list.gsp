@@ -26,12 +26,13 @@
 					
 						<th>Description</th>
 						<th>Amount</th>
-						<th>Entered</th>
+						<th>When</th>
+						<th>Project</th>
 <%--						<g:sortableColumn property="description" title="${message(code: 'accountEntry.description.label', default: 'Description')}" />--%>
 <%--						--%>
 <%--						<g:sortableColumn property="amount" title="${message(code: 'accountEntry.amount.label', default: 'Amount')}" />--%>
 <%--					--%>
-<%--						<g:sortableColumn property="entered" title="${message(code: 'accountEntry.entered.label', default: 'Entered')}" />--%>
+<%--						<g:sortableColumn property="when" title="${message(code: 'accountEntry.when.label', default: 'When')}" />--%>
 					
 						<th>Actions</th>
 					</tr>
@@ -45,7 +46,9 @@
 						
 						<td><g:formatNumber number="${accountEntryInstance.amount}" type="currency"/></td>
 					
-						<td><g:formatDate date="${accountEntryInstance.entered}" type="date"/></td>
+						<td><g:formatDate date="${accountEntryInstance.when}" type="date"/></td>
+						
+						<td>${fieldValue(bean: accountEntryInstance, field: "project.name") }</td>
 					
 						<td>
 							<g:link  action="edit" id="${accountEntryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

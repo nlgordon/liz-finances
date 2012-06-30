@@ -5,7 +5,7 @@
 		<tr>
 			<th><g:message code="timeEntry.when.label" default="When"/></th>
 		
-			<th><g:message code="timeEntry.amount.label" default="Amount" /></th>
+			<th><g:message code="timeEntry.hours.label" default="Hours" /></th>
 		
 			<th><g:message code="timeEntry.project.label" default="Project" /></th>
 		
@@ -22,7 +22,7 @@
 				</g:link>
 			</td>
 			
-			<td>${fieldValue(bean: timeEntryInstance, field: "amount")}</td>
+			<td>${fieldValue(bean: timeEntryInstance, field: "hours")}</td>
 		
 			<td>${fieldValue(bean: timeEntryInstance, field: "project.name")}</td>
 			

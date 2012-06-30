@@ -10,6 +10,7 @@ class IndexController {
 		Date start = new DateTime().minusDays(14).toDate();
 		List timeEntries = TimeEntry.findAllByWhenGreaterThanEquals(start, params);
 		List projects = Project.findAllByPaidIsNull();
-        [timeEntryList: timeEntries, projectList: projects];
+		List accountEntries = AccountEntry.findAllByWhenGreaterThanEquals(start, params);
+        [timeEntryList: timeEntries, projectList: projects, accountEntryList: accountEntries];
 	}
 }
