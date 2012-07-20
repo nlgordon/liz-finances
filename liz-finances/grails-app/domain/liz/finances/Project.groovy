@@ -8,8 +8,9 @@ class Project {
 		paid(nullable: true, blank: true)
 		paymentAmount(nullable: true, blank: true)
 		invoiceNumber(nullable: true, blank: true)
-		contractDone(nullable: true)
     }
+	
+	static transients = [ "contractDone" ];
 	
 	static hasMany = [timeEntry: TimeEntry, accountEntry: AccountEntry];
 	

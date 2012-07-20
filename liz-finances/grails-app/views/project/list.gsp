@@ -24,13 +24,16 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="name" title="${message(code: 'project.name.label', default: 'Name')}" />
+						
+						<g:sortableColumn property="start" title="${message(code: 'project.start.label', default: 'Start')}" />
+						
 						<g:sortableColumn property="completed" title="${message(code: 'project.completed.label', default: 'Completed')}" />
 					
-						<g:sortableColumn property="contractDone" title="${message(code: 'project.contractDone.label', default: 'Contract Done')}" />
+<%--						<g:sortableColumn property="contractDone" title="${message(code: 'project.contractDone.label', default: 'Contract Done')}" />--%>
 					
 						<g:sortableColumn property="contractNumber" title="${message(code: 'project.contractNumber.label', default: 'Contract Number')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'project.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="paid" title="${message(code: 'project.paid.label', default: 'Paid')}" />
 					
@@ -42,13 +45,16 @@
 				<g:each in="${projectInstanceList}" status="i" var="projectInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "completed")}</g:link></td>
+						<td><g:link action="show" id="${projectInstance.id}">${fieldValue(bean: projectInstance, field: "name")}</g:link></td>
+						
+						<td><g:formatDate format="d MMM yyyy" date="${projectInstance.start}" /></td>
+						
+						<td><g:formatDate format="d MMM yyyy" date="${projectInstance.completed }"/></td>
 					
-						<td><g:formatBoolean boolean="${projectInstance.contractDone}" /></td>
+<%--						<td><g:formatBoolean boolean="${projectInstance.contractDone}" /></td>--%>
 					
 						<td>${fieldValue(bean: projectInstance, field: "contractNumber")}</td>
 					
-						<td>${fieldValue(bean: projectInstance, field: "name")}</td>
 					
 						<td><g:formatDate date="${projectInstance.paid}" /></td>
 					
