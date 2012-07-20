@@ -33,7 +33,8 @@
 <%--						<g:sortableColumn property="contractDone" title="${message(code: 'project.contractDone.label', default: 'Contract Done')}" />--%>
 					
 						<g:sortableColumn property="contractNumber" title="${message(code: 'project.contractNumber.label', default: 'Contract Number')}" />
-					
+						
+						<g:sortableColumn property="invoiceNumber" title="${message(code: 'project.invoiceNumber.label', default: 'Invoice Number')}" />
 					
 						<g:sortableColumn property="paid" title="${message(code: 'project.paid.label', default: 'Paid')}" />
 					
@@ -54,7 +55,8 @@
 <%--						<td><g:formatBoolean boolean="${projectInstance.contractDone}" /></td>--%>
 					
 						<td>${fieldValue(bean: projectInstance, field: "contractNumber")}</td>
-					
+						
+						<td>${fieldValue(bean: projectInstance, field: "invoiceNumber")}</td>
 					
 						<td><g:formatDate date="${projectInstance.paid}" /></td>
 					

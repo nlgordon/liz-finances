@@ -8,6 +8,7 @@
 			<th>Due</th>
 			<th>Completed</th>
 			<th>Contract Number</th>
+			<th>Invoice Number</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -18,6 +19,7 @@
 			<td><g:formatDate format="d MMM yyyy" date="${project.due }"/></td>
 			<td><g:formatDate format="d MMM yyyy" date="${project.completed }"/></td>
 			<td>${project.contractNumber }</td>
+			<td>${project.invoiceNumber }</td>
 			
 		</tr>
 	</g:each>

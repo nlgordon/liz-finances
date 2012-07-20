@@ -50,7 +50,7 @@
 					
 				</li>
 				</g:if>
-			
+				
 				<g:if test="${projectInstance?.paymentAmount}">
 				<li class="fieldcontain">
 					<span id="paymentAmount-label" class="property-label"><g:message code="project.paymentAmount.label" default="Payment Amount" /></span>

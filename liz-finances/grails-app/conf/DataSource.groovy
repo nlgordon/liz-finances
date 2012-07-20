@@ -23,6 +23,8 @@ environments {
         dataSource {
             dbCreate = "update"
             url = "jdbc:h2:mem:testDb;MVCC=TRUE"
+			logSql = true
+			loggingSql = true
         }
     }
     production {
@@ -30,6 +32,8 @@ environments {
             dbCreate = "update"
             url = "jdbc:h2:prodDb;MVCC=TRUE"
             pooled = true
+			logSql = true
+			loggingSql = true
             properties {
                maxActive = -1
                minEvictableIdleTimeMillis=1800000
