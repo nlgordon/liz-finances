@@ -7,6 +7,8 @@ class Project {
 		completed(nullable: true, blank: true)
 		paid(nullable: true, blank: true)
 		paymentAmount(nullable: true, blank: true)
+		invoiceNumber(nullable: true, blank: true)
+		contractDone(nullable: true)
     }
 	
 	static hasMany = [timeEntry: TimeEntry, accountEntry: AccountEntry];
@@ -19,5 +21,6 @@ class Project {
 	String contractNumber;
 	Boolean contractDone;
 	BigDecimal paymentAmount;
+	String invoiceNumber;
 	
 }

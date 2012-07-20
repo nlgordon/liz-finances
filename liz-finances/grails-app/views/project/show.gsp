@@ -24,11 +24,20 @@
 			<ol class="property-list project">
 			
 			
-				<g:if test="${projectInstance?.contractDone}">
+<%--				<g:if test="${projectInstance?.contractDone}">--%>
+<%--				<li class="fieldcontain">--%>
+<%--					<span id="contractDone-label" class="property-label"><g:message code="project.contractDone.label" default="Contract Done" /></span>--%>
+<%--					--%>
+<%--						<span class="property-value" aria-labelledby="contractDone-label"><g:formatBoolean boolean="${projectInstance?.contractDone}" /></span>--%>
+<%--					--%>
+<%--				</li>--%>
+<%--				</g:if>--%>
+			
+				<g:if test="${projectInstance?.name}">
 				<li class="fieldcontain">
-					<span id="contractDone-label" class="property-label"><g:message code="project.contractDone.label" default="Contract Done" /></span>
+					<span id="name-label" class="property-label"><g:message code="project.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="contractDone-label"><g:formatBoolean boolean="${projectInstance?.contractDone}" /></span>
+						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${projectInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>
@@ -42,15 +51,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${projectInstance?.name}">
-				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="project.name.label" default="Name" /></span>
-					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${projectInstance}" field="name"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${projectInstance?.paymentAmount}">
 				<li class="fieldcontain">
 					<span id="paymentAmount-label" class="property-label"><g:message code="project.paymentAmount.label" default="Payment Amount" /></span>
@@ -58,6 +58,15 @@
 						<span class="property-value" aria-labelledby="paymentAmount-label">
 							<g:formatNumber number="${projectInstance?.paymentAmount}" type="currency" currencyCode="USD"/>
 						</span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${projectInstance?.invoiceNumber}">
+				<li class="fieldcontain">
+					<span id="invoiceNumber-label" class="property-label"><g:message code="project.invoiceNumber.label" default="Invoice Number" /></span>
+					
+						<span class="property-value" aria-labelledby="invoiceNumber-label"><g:fieldValue bean="${projectInstance}" field="invoiceNumber"/></span>
 					
 				</li>
 				</g:if>

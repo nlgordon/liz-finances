@@ -35,21 +35,28 @@
 	<g:textField name="contractNumber" value="${projectInstance?.contractNumber}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'paymentAmount', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'paymentAmount', 'error')}">
 	<label for="paymentAmount">
 		<g:message code="project.paymentAmount.label" default="Payment Amount" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="number" name="paymentAmount" required="" value="${fieldValue(bean: projectInstance, field: 'paymentAmount')}"/>
+	<g:field type="number" name="paymentAmount" value="${fieldValue(bean: projectInstance, field: 'paymentAmount')}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'contractDone', 'error')} ">
-	<label for="contractDone">
-		<g:message code="project.contractDone.label" default="Contract Done" />
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'invoiceNumber', 'error')} ">
+	<label for="invoiceNumber">
+		<g:message code="project.invoiceNumber.label" default="Invoice Number" />
 		
 	</label>
-	<g:checkBox name="contractDone" value="${projectInstance?.contractDone}" />
+	<g:textField name="invoiceNumber" value="${projectInstance?.invoiceNumber}"/>
 </div>
+
+<%--<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'contractDone', 'error')} ">--%>
+<%--	<label for="contractDone">--%>
+<%--		<g:message code="project.contractDone.label" default="Contract Done" />--%>
+<%--		--%>
+<%--	</label>--%>
+<%--	<g:checkBox name="contractDone" value="${projectInstance?.contractDone}" />--%>
+<%--</div>--%>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'start', 'error')} required">
 	<label for="start">
