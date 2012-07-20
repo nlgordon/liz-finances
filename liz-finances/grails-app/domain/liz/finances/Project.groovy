@@ -6,6 +6,7 @@ class Project {
 		due(nullable: true, blank: true)
 		completed(nullable: true, blank: true)
 		paid(nullable: true, blank: true)
+		paymentAmount(nullable: true, blank: true)
     }
 	
 	static hasMany = [timeEntry: TimeEntry, accountEntry: AccountEntry];

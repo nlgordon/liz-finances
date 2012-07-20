@@ -31,6 +31,6 @@
 		<g:message code="timeEntry.when.label" default="When" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="when" precision="day"  value="${timeEntryInstance?.when}"  />
+	<g:datePicker name="when" precision="day"  value="${timeEntryInstance?.when}" years="${2012}" />
 </div>
 
