@@ -21,6 +21,7 @@ class ProjectController {
 
     def save() {
         def projectInstance = new Project(params)
+		projectInstance.contractDone = false;
         if (!projectInstance.save(flush: true)) {
             render(view: "create", model: [projectInstance: projectInstance])
             return
