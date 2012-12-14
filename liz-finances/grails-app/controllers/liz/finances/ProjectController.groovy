@@ -11,7 +11,7 @@ class ProjectController {
     }
 
     def list() {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        params.max = Math.min(params.max ? params.int('max') : 50, 100)
         [projectInstanceList: Project.list(params), projectInstanceTotal: Project.count()]
     }
 
@@ -21,7 +21,6 @@ class ProjectController {
 
     def save() {
         def projectInstance = new Project(params)
-		projectInstance.contractDone = false;
         if (!projectInstance.save(flush: true)) {
             render(view: "create", model: [projectInstance: projectInstance])
             return
@@ -55,6 +54,8 @@ class ProjectController {
 
     def update() {
         def projectInstance = Project.get(params.id)
+		
+		def temp = params;
         if (!projectInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'project.label', default: 'Project'), params.id])
             redirect(action: "list")
@@ -73,6 +74,8 @@ class ProjectController {
         }
 
         projectInstance.properties = params
+		
+		log.error("Invoice: ${params.invoiceNumber} ${projectInstance.invoiceNumber}")
 
         if (!projectInstance.save(flush: true)) {
             render(view: "edit", model: [projectInstance: projectInstance])

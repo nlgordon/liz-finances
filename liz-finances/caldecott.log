@@ -1,0 +1,82 @@
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [due] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [completed] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paid] of domain class liz.finances.Project has type [java.util.Date] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - [WARNING] Property [paymentAmount] of domain class liz.finances.Project has type [java.math.BigDecimal] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered
+WARN : SLF4JLog [main] - Bean named 'groovyPagesUriService' is missing.
+WARN : SLF4JLog [main] - [WARNING] Property [project] of domain class liz.finances.AccountEntry has type [liz.finances.Project] and doesn't support constraint [blank]. This constraint will not be checked during validation.
+WARN : SLF4JLog [main] - Cannot unbind session, there's no SessionHolder registered

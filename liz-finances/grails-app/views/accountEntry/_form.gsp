@@ -25,6 +25,13 @@
 	<g:field type="text" name="description" value="${accountEntryInstance?.description}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: accountEntryInstance, field: 'paymentNumber', 'error')} ">
+	<label for="paymentNumber">
+		<g:message code="accountEntry.paymentNumber.label" default="Payment Number" />
+	</label>
+	<g:field type="text" name="paymentNumber" value="${accountEntryInstance?.paymentNumber}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: accountEntryInstance, field: 'project', 'error')}">
 	<label for="project">
 		<g:message code="accountEntry.project.label" default="Project" />

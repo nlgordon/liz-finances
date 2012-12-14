@@ -7,6 +7,7 @@ class AccountEntry {
     static constraints = {
 		description(nullable: true, blank: true)
 		project(nullable: true, blank: true)
+		paymentNumber(nullable: true)
     }
 	
 	static mapping = {
@@ -17,4 +18,5 @@ class AccountEntry {
 	BigDecimal amount;
 	String description;
 	Project project;
+	String paymentNumber;
 }

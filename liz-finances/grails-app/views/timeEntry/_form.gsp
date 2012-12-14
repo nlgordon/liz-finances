@@ -7,7 +7,7 @@
 		<g:message code="timeEntry.hours.label" default="Hours" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field type="number" max="24" step=".1" name="hours" required="" value="${fieldValue(bean: timeEntryInstance, field: 'hours')}"/>
+	<g:field type="number" max="24" step=".01" name="hours" required="" value="${fieldValue(bean: timeEntryInstance, field: 'hours')}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: timeEntryInstance, field: 'notes', 'error')} ">

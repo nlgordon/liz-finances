@@ -25,6 +25,7 @@
 					<tr>
 					
 						<th>Description</th>
+						<th>Payment Number</th>
 						<th>Amount</th>
 						<th>When</th>
 						<th>Project</th>
@@ -43,6 +44,7 @@
 					
 <%--						<td><g:link action="show" id="${accountEntryInstance.id}">${fieldValue(bean: accountEntryInstance, field: "description")}</g:link></td>--%>
 						<td>${fieldValue(bean: accountEntryInstance, field: "description")}</td>
+						<td>${fieldValue(bean: accountEntryInstance, field: "paymentNumber")}</td>
 						
 						<td><g:formatNumber number="${accountEntryInstance.amount}" type="currency"/></td>
 					

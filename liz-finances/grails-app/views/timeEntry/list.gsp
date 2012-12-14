@@ -24,13 +24,15 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="when" title="${message(code: 'timeEntry.when.label', default: 'When')}" />
+						
 						<g:sortableColumn property="hours" title="${message(code: 'timeEntry.hours.label', default: 'Hours')}" />
 					
+						<th><g:message code="timeEntry.project.label" default="Project" /></th>
+						
 						<g:sortableColumn property="notes" title="${message(code: 'timeEntry.notes.label', default: 'Notes')}" />
 					
-						<th><g:message code="timeEntry.project.label" default="Project" /></th>
 					
-						<g:sortableColumn property="when" title="${message(code: 'timeEntry.when.label', default: 'When')}" />
 					
 					</tr>
 				</thead>
@@ -38,13 +40,17 @@
 				<g:each in="${timeEntryInstanceList}" status="i" var="timeEntryInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${timeEntryInstance.id}">${fieldValue(bean: timeEntryInstance, field: "hours")}</g:link></td>
+						<td>
+							<g:link action="show" id="${timeEntryInstance.id}">
+								<g:formatDate format="d MMM yyyy" date="${timeEntryInstance.when}" />
+							</g:link>
+						</td>
+						
+						<td>${fieldValue(bean: timeEntryInstance, field: "hours")}</td>
 					
+						<td>${fieldValue(bean: timeEntryInstance, field: "project.name")}</td>
+						
 						<td>${fieldValue(bean: timeEntryInstance, field: "notes")}</td>
-					
-						<td>${fieldValue(bean: timeEntryInstance, field: "project")}</td>
-					
-						<td><g:formatDate date="${timeEntryInstance.when}" /></td>
 					
 					</tr>
 				</g:each>

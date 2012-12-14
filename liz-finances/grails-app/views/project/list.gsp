@@ -58,7 +58,7 @@
 						
 						<td>${fieldValue(bean: projectInstance, field: "invoiceNumber")}</td>
 					
-						<td><g:formatDate date="${projectInstance.paid}" /></td>
+						<td><g:formatDate format="d MMM yyyy" date="${projectInstance.paid}" /></td>
 					
 						<td>${fieldValue(bean: projectInstance, field: "paymentAmount")}</td>
 					
@@ -67,7 +67,7 @@
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="${projectInstanceTotal}" />
+				<g:paginate total="${projectInstanceTotal}" max="50"/>
 			</div>
 		</div>
 	</body>

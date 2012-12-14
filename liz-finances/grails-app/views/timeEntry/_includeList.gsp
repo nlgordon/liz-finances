@@ -14,7 +14,9 @@
 		</tr>
 	</thead>
 	<tbody>
+	<g:set var="totalHours" value="${ 0 }"/>
 	<g:each in="${timeEntryList}" status="i" var="timeEntryInstance">
+		<g:set var="totalHours" value="${totalHours + timeEntryInstance.hours }"/>
 		<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 			<td>
 				<g:link action="edit" controller="timeEntry" id="${timeEntryInstance.id}">
@@ -31,5 +33,10 @@
 		
 		</tr>
 	</g:each>
+		<g:if test="${totalHours != 0}">
+		<tr>
+			<td colspan="4">Total Hours: ${totalHours }</td>
+		</tr>
+		</g:if>
 	</tbody>
 </table>

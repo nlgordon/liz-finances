@@ -50,6 +50,14 @@
 	<g:textField name="invoiceNumber" value="${projectInstance?.invoiceNumber}"/>
 </div>
 
+<%--<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'testCol', 'error')} ">--%>
+<%--	<label for="testCol">--%>
+<%--		<g:message code="project.testCol.label" default="Test" />--%>
+<%--		--%>
+<%--	</label>--%>
+<%--	<g:textField name="testCol" value="${projectInstance?.testCol}"/>--%>
+<%--</div>--%>
+
 <%--<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'contractDone', 'error')} ">--%>
 <%--	<label for="contractDone">--%>
 <%--		<g:message code="project.contractDone.label" default="Contract Done" />--%>

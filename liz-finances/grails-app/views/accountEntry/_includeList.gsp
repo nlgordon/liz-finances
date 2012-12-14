@@ -10,6 +10,8 @@
 			<th><g:message code="accountEntry.project.label" default="Project" /></th>
 		
 			<th><g:message code="accountEntry.description.label" default="Description" />
+			
+			<th><g:message code="accountEntry.description.label" default="Payment Number" />
 		
 		</tr>
 	</thead>
@@ -26,11 +28,11 @@
 				<g:formatNumber number="${accountEntryInstance?.amount}" type="currency" currencyCode="USD"/>
 			</td>
 		
-							
 			<td>${fieldValue(bean: accountEntryInstance, field: "project.name")}</td>
 			
 			<td>${fieldValue(bean: accountEntryInstance, field: "description")}</td>
-		
+			
+			<td>${fieldValue(bean: accountEntryInstance, field: "paymentNumber")}</td>
 		
 		</tr>
 	</g:each>

@@ -70,6 +70,15 @@
 					
 				</li>
 				</g:if>
+				
+<%--				<g:if test="${projectInstance?.testCol}">--%>
+<%--				<li class="fieldcontain">--%>
+<%--					<span id="testCol-label" class="property-label"><g:message code="project.testCol.label" default="Test Col" /></span>--%>
+<%--					--%>
+<%--						<span class="property-value" aria-labelledby="testCol-label"><g:fieldValue bean="${projectInstance}" field="testCol"/></span>--%>
+<%--					--%>
+<%--				</li>--%>
+<%--				</g:if>--%>
 			
 				<g:if test="${projectInstance?.start}">
 				<li class="fieldcontain">
