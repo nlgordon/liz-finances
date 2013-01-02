@@ -15,7 +15,7 @@
 		<g:message code="accountEntry.when.label" default="When" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="when" precision="day"  value="${accountEntryInstance?.when}" required="" />
+	<g:datePicker name="when" precision="day"  value="${accountEntryInstance?.when}" required="" relativeYears="${-1..1}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: accountEntryInstance, field: 'description', 'error')} ">

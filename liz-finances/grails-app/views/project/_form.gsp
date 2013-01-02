@@ -71,21 +71,21 @@
 		<g:message code="project.start.label" default="Start" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="start" precision="day"  value="${projectInstance?.start}" years="${2012}"  />
+	<g:datePicker name="start" precision="day"  value="${projectInstance?.start}" relativeYears="${-1..1}"  />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'due', 'error')}">
 	<label for="due">
 		<g:message code="project.due.label" default="Due" />
 	</label>
-	<g:datePicker name="due" precision="day"  value="${projectInstance?.due}" noSelection="${['':'--']}" default="none"  years="${2012}"/>
+	<g:datePicker name="due" precision="day"  value="${projectInstance?.due}" noSelection="${['':'--']}" default="none"  relativeYears="${-1..1}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'completed', 'error')}">
 	<label for="completed">
 		<g:message code="project.completed.label" default="Completed" />
 	</label>
-	<g:datePicker name="completed" precision="day"  value="${projectInstance?.completed}" noSelection="${['':'--']}" default="none" years="${2012}"  />
+	<g:datePicker name="completed" precision="day"  value="${projectInstance?.completed}" noSelection="${['':'--']}" default="none" relativeYears="${-1..1}" />
 </div>
 
 
@@ -93,7 +93,7 @@
 	<label for="paid">
 		<g:message code="project.paid.label" default="Paid" />
 	</label>
-	<g:datePicker name="paid" precision="day"  value="${projectInstance?.paid}" noSelection="${['':'--']}" default="none" years="${2012}" />
+	<g:datePicker name="paid" precision="day"  value="${projectInstance?.paid}" noSelection="${['':'--']}" default="none" relativeYears="${-1..1}" />
 </div>
 
 <%--<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'timeEntry', 'error')} ">--%>
